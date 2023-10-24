@@ -10,6 +10,7 @@ export const allRooms = async (req: NextRequest) => {
 
     success: true,
     resPerPage,
+    length: rooms.length,
     rooms,
   });
 };
