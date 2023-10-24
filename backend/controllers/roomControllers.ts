@@ -27,7 +27,7 @@ export const allRooms = catchAsyncErrors(async (req: NextRequest) => {
 
   //console.log(apiFilters, "apiFilters")
 
-  let rooms: IRoom = await apiFilters.query;
+  let rooms: IRoom[] = await apiFilters.query;
 
   // console.log(rooms, "rooms")
   const filteredRoomsCount: number = rooms.length;
