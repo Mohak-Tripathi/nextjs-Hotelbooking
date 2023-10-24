@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import Room from "../models/room";
 
 
 export const allRooms = async (req: NextRequest) => {
@@ -6,3 +7,22 @@ export const allRooms = async (req: NextRequest) => {
     data: "hello",
   });
 };
+
+// Create new room  =>  /api/admin/rooms
+
+export const newRoom  = async(req: NextRequest) =>{
+
+
+  const body = await req.json()
+
+
+  const room = await Room.create(body)
+
+  return NextResponse.json({
+    success: true, 
+    room
+
+  })
+
+
+}
