@@ -1,5 +1,5 @@
 import mongoose, { Document, Schema } from "mongoose";
-// import bcrypt from "bcryptjs";
+import bcrypt from "bcryptjs";
 
 export interface IUser extends Document {
   name: string;
@@ -49,6 +49,7 @@ const userSchema: Schema<IUser> = new mongoose.Schema({
 
 // Encrypting password before saving the user
 userSchema.pre("save", async function (next) {
+    //if password field is not modified
   if (!this.isModified("password")) {
     next();
   }
