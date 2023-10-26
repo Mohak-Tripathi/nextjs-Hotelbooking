@@ -13,7 +13,8 @@ const getRooms = async (searchParams: string) => {
     cache: "no-cache",
   });
   return res.json();
-};
+  
+}; 
 
 export default async function HomePage({
   searchParams,
