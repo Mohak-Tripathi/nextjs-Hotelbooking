@@ -14,12 +14,15 @@ const Search = () => {
     e.preventDefault();
 
     const queryString = [
+
+
       location && `location=${encodeURIComponent(location)}`,
       guests && `guestCapacity=${encodeURIComponent(guests)}`,
       category && `category=${encodeURIComponent(category)}`,
     ]
       .filter(Boolean)
       .join("&");
+    //   encodeURIComponent - just to remove unwatended Space. Also Figtree(Boolean) basically if there is any falsy value among 3 will be removed. 
 
     router.push(`/?${queryString}`);
   };
