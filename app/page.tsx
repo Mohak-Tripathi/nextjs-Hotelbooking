@@ -18,7 +18,7 @@ export default async function HomePage() {
     return <Error error={data} />;
   }
 
-  return <Home />;
+  return <Home data={data} />;
 }
 
 
