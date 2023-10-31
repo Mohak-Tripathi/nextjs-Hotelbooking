@@ -64,6 +64,7 @@
 // export default Header;
 
 
+
 "use client";
 
 import { signOut, useSession } from "next-auth/react";
@@ -107,7 +108,9 @@ const Header = () => {
                 <figure className="avatar avatar-nav">
                   <img
                     src={
+                      // @ts-ignore
                       data?.user?.avatar
+                      // @ts-ignore
                         ? data?.user?.avatar?.url
                         : "/images/default_avatar.jpg"
                     }
