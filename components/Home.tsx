@@ -21,7 +21,7 @@ const Home = ({ data }: Props) => {
           <i className="fa fa-arrow-left"></i> Back to Search
         </a>
         <div className="row mt-4">
-          {rooms?.length === 0 ? (
+          {filteredRoomsCount === 0 ? (
             <div className="alert alert-danger mt-5 w-100">
               <b>No Rooms.</b>
             </div>
