@@ -11,6 +11,13 @@ const nextConfig = {
 
     NEXTAUTH_URL: "http://localhost:3000",
     NEXTAUTH_SECRET: "KSDFJKLSDJFLKSDFJSLDKF934KJLDJGDLKGFJDF",
+
+    SMTP_HOST: "sandbox.smtp.mailtrap.io",
+    SMTP_PORT: 2525,
+    SMTP_USER:  "6b56674b1d8c3d",
+    SMTP_PASSWORD: "2b66b49d9f2f5d",
+    SMTP_FROM_EMAIL: "noreply@bookit.com",
+    SMTP_FROM_NAME: "BookIT",
   },
     images: {
       domains: ["res.cloudinary.com"],
