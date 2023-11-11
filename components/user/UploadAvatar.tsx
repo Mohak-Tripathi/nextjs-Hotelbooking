@@ -43,6 +43,7 @@ const UploadAvatar = () => {
       updateSession();
 
       router.refresh();
+      toast.success("Avatar updated successfully");
     }
   }, [user, error, isSuccess]);
 
