@@ -29,15 +29,15 @@ export const userApi = createApi({
         };
       },
     }),
-    // uploadAvatar: builder.mutation({
-    //   query(body) {
-    //     return {
-    //       url: "/me/upload_avatar",
-    //       method: "PUT",
-    //       body,
-    //     };
-    //   },
-    // }),
+    uploadAvatar: builder.mutation({
+      query(body) {
+        return {
+          url: "/me/upload_avatar",
+          method: "PUT",
+          body,
+        };
+      },
+    }),
   }),
 });
 
@@ -45,5 +45,5 @@ export const {
   useUpdateProfileMutation,
   useLazyUpdateSessionQuery,  // use lazy update session- we don't want to update the session data  immediately, without updating LazyUpdateSession, it fires the immediately
 useUpdatePasswordMutation,
-//   useUploadAvatarMutation,
+ useUploadAvatarMutation,
 } = userApi;

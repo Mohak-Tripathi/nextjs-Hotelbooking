@@ -6,10 +6,12 @@ cloudinary.v2.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
+
 const upload_file = (
   file: string,
   folder: string
 ): Promise<{ public_id: string; url: string }> => {
+  console.log(process.env.CLOUDINARY_CLOUD_NAME, process.env.CLOUDINARY_API_KEY, "helloooooo" )
   return new Promise((resolve, reject) => {
     cloudinary.v2.uploader.upload(
       file,
@@ -25,6 +27,7 @@ const upload_file = (
       }
     );
   });
+
 };
 
 const delete_file = async (file: string): Promise<boolean> => {

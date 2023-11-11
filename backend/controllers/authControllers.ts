@@ -71,6 +71,8 @@ export const updatePassword = catchAsyncErrors(async (req: NextRequest) => {
 export const uploadAvatar = catchAsyncErrors(async (req: NextRequest) => {
   const body = await req.json();
 
+  // console.log(body, "Upload"
+  //console.log(process.env.CLOUDINARY_CLOUD_NAME, process.env.CLOUDINARY_API_KEY, "hello", body)
   const avatarResponse = await upload_file(body?.avatar, "bookit/avatars");
 
   // Remove avatar from cloudinary
