@@ -13,13 +13,13 @@ export const userApi = createApi({
         };
       },
     }),
-    // updateSession: builder.query({
-    //   query() {
-    //     return {
-    //       url: "/auth/session?update",
-    //     };
-    //   },
-    // }),
+    updateSession: builder.query({  //becz GET request so query
+      query() {
+        return {
+          url: "/auth/session?update",
+        };
+      },
+    }),
     // updatePassword: builder.mutation({
     //   query(body) {
     //     return {
@@ -43,7 +43,7 @@ export const userApi = createApi({
 
 export const {
   useUpdateProfileMutation,
-//   useLazyUpdateSessionQuery,
+  useLazyUpdateSessionQuery,  // use lazy update session- we don't want to update the session data  immediately, without updating LazyUpdateSession, it fires the immediately
 //   useUpdatePasswordMutation,
 //   useUploadAvatarMutation,
 } = userApi;

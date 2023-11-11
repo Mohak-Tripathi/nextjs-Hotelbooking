@@ -1,7 +1,7 @@
 "use client";
 
 import {
-//   useLazyUpdateSessionQuery,
+  useLazyUpdateSessionQuery,
   useUpdateProfileMutation,
 } from "@/redux/api/userApi";
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
@@ -23,9 +23,10 @@ const UpdateProfile = () => {
   const [updateProfile, { isLoading, isSuccess, error }] =
     useUpdateProfileMutation();
 
-//   const [updateSession, { data }] = useLazyUpdateSessionQuery();
+  const [updateSession, { data }] = useLazyUpdateSessionQuery();
+console.log(data)
 
-//   if (data) dispatch(setUser(data?.user));
+  if (data) dispatch(setUser(data?.user));
 
   useEffect(() => {
     if (currentUser) {
@@ -39,7 +40,7 @@ const UpdateProfile = () => {
 
     if (isSuccess) {
       //@ts-ignore
-      // updateSession();
+      updateSession();
 
       router.refresh();
     }
