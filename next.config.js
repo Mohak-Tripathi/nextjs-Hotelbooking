@@ -19,6 +19,9 @@ const nextConfig = {
     SMTP_FROM_EMAIL: "noreply@bookit.com",
     SMTP_FROM_NAME: "BookIT",
 
+    MAPBOX_ACCESS_TOKEN: "pk.eyJ1IjoibW9oYWt0cmlwYXRoaSIsImEiOiJjbG92MjI1NHYwbmppMmpxd3Q4ZjVwb2N6In0._ncB1PA31p4_7JLjVNGi-w",
+    
+
     GEOCODER_API_KEY: "TTivyACZzeZZZusQysKyC1Khrl1NRFWV",
     GEOCODER_PROVIDER: "mapquest",
 
