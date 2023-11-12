@@ -4,7 +4,7 @@ import { IRoom } from "@/backend/models/room";
 import { calculateDaysOfStay } from "@/helpers/helpers";
 import {
   // useGetBookedDatesQuery,
-  // useLazyCheckBookingAvailabilityQuery,
+  useLazyCheckBookingAvailabilityQuery,
   useNewBookingMutation,
 } from "@/redux/api/bookingApi";
 import React, { useState } from "react";
@@ -23,10 +23,11 @@ const BookingDatePicker = ({ room }: Props) => {
 
   const [newBooking] = useNewBookingMutation();
 
-  // const [checkBookingAvailability, { data }] =
-  //   useLazyCheckBookingAvailabilityQuery();
+  const [checkBookingAvailability, { data }] =
+    useLazyCheckBookingAvailabilityQuery();
 
-  // const isAvailable = data?.isAvailable;
+  const isAvailable = data?.isAvailable;
+  console.log(isAvailable, "isAvailable")
 
   // const { data: { bookedDates: dates } = {} } = useGetBookedDatesQuery(
   //   room._id
@@ -44,12 +45,12 @@ const BookingDatePicker = ({ room }: Props) => {
 
       setDaysOfStay(days);
 
-      // check booking availability
-      // checkBookingAvailability({
-      //   id: room._id,
-      //   checkInDate: checkInDate.toISOString(),
-      //   checkOutDate: checkOutDate.toISOString(),
-      // });
+      //check booking availability
+      checkBookingAvailability({
+        id: room._id,
+        checkInDate: checkInDate.toISOString(),
+        checkOutDate: checkOutDate.toISOString(),
+      });
     }
   };
 
@@ -91,7 +92,7 @@ const BookingDatePicker = ({ room }: Props) => {
         inline
       />
 
-      {/* {isAvailable === true && (
+     {isAvailable === true && (
         <div className="alert alert-success my-3">
           Room is available. Book now.
         </div>
@@ -100,7 +101,7 @@ const BookingDatePicker = ({ room }: Props) => {
         <div className="alert alert-danger my-3">
           Room not available. Try different dates.
         </div>
-      )} */}
+      )} 
 
       <button className="btn py-3 form-btn w-100" onClick={bookRoom}>
         Pay

@@ -13,13 +13,13 @@ export const bookingApi = createApi({
         };
       },
     }),
-    // checkBookingAvailability: builder.query({
-    //   query({ id, checkInDate, checkOutDate }) {
-    //     return {
-    //       url: `/bookings/check_room_availability?roomId=${id}&checkInDate=${checkInDate}&checkOutDate=${checkOutDate}`,
-    //     };
-    //   },
-    // }),
+    checkBookingAvailability: builder.query({
+      query({ id, checkInDate, checkOutDate }) {
+        return {
+          url: `/bookings/check_room_availability?roomId=${id}&checkInDate=${checkInDate}&checkOutDate=${checkOutDate}`,
+        };
+      },
+    }),
     // getBookedDates: builder.query({
     //   query(id) {
     //     return {
@@ -32,6 +32,6 @@ export const bookingApi = createApi({
 
 export const {
   useNewBookingMutation,
-//   useLazyCheckBookingAvailabilityQuery,
+ useLazyCheckBookingAvailabilityQuery,
 //   useGetBookedDatesQuery,
 } = bookingApi;
