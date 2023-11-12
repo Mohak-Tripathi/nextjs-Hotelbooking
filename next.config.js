@@ -18,6 +18,10 @@ const nextConfig = {
     SMTP_PASSWORD: "2b66b49d9f2f5d",
     SMTP_FROM_EMAIL: "noreply@bookit.com",
     SMTP_FROM_NAME: "BookIT",
+
+    GEOCODER_API_KEY: "TTivyACZzeZZZusQysKyC1Khrl1NRFWV",
+    GEOCODER_PROVIDER: "mapquest",
+
   },
     images: {
       domains: ["res.cloudinary.com"],
