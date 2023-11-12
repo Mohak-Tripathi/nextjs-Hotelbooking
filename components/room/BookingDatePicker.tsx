@@ -65,6 +65,7 @@ const BookingDatePicker = ({ room }: Props) => {
         status: "PAID",
       },
     };
+    console.log(bookingData, "bookingData");
       newBooking(bookingData);
   };
 
