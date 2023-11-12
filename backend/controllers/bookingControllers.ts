@@ -87,26 +87,26 @@ console.log(bookedDates, "booked dates")
   });
 });
 
-// // Get current user bookings   =>  /api/bookings/me
-// export const myBookings = catchAsyncErrors(async (req: NextRequest) => {
-//   const bookings = await Booking.find({ user: req.user._id });
+// Get current user bookings   =>  /api/bookings/me
+export const myBookings = catchAsyncErrors(async (req: NextRequest) => {
+  const bookings = await Booking.find({ user: req.user._id });
 
-//   return NextResponse.json({
-//     bookings,
-//   });
-// });
+  return NextResponse.json({
+    bookings,
+  });
+});
 
 // Get booking details   =>  /api/bookings/:id
-// export const getBookingDetails = catchAsyncErrors(
-//   async (req: NextRequest, { params }: { params: { id: string } }) => {
-//     const booking = await Booking.findById(params.id).populate("user room");
+export const getBookingDetails = catchAsyncErrors(
+  async (req: NextRequest, { params }: { params: { id: string } }) => {
+    const booking = await Booking.findById(params.id).populate("user room");
 
-//     if (booking.user?._id?.toString() !== req.user._id) {
-//       throw new ErrorHandler("You can not view this booking", 403);
-//     }
+    if (booking.user?._id?.toString() !== req.user._id) {
+      throw new ErrorHandler("You can not view this booking", 403);
+    }
 
-//     return NextResponse.json({
-//       booking,
-//     });
-//   }
-// );
+    return NextResponse.json({
+      booking,
+    });
+  }
+);
