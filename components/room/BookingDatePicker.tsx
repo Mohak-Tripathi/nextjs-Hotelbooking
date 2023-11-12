@@ -1,12 +1,12 @@
 "use client";
 
 import { IRoom } from "@/backend/models/room";
-//import { calculateDaysOfStay } from "@/helpers/helpers";
-// import {
-//   useGetBookedDatesQuery,
-//   useLazyCheckBookingAvailabilityQuery,
-//   useNewBookingMutation,
-// } from "@/redux/api/bookingApi";
+import { calculateDaysOfStay } from "@/helpers/helpers";
+import {
+  // useGetBookedDatesQuery,
+  // useLazyCheckBookingAvailabilityQuery,
+  useNewBookingMutation,
+} from "@/redux/api/bookingApi";
 import React, { useState } from "react";
 
 import DatePicker from "react-datepicker";
@@ -21,7 +21,7 @@ const BookingDatePicker = ({ room }: Props) => {
   const [checkOutDate, setCheckOutDate] = useState(new Date());
   const [daysOfStay, setDaysOfStay] = useState(0);
 
-  // const [newBooking] = useNewBookingMutation();
+  const [newBooking] = useNewBookingMutation();
 
   // const [checkBookingAvailability, { data }] =
   //   useLazyCheckBookingAvailabilityQuery();
@@ -40,9 +40,9 @@ const BookingDatePicker = ({ room }: Props) => {
     setCheckOutDate(checkOutDate);
 
     if (checkInDate && checkOutDate) {
-      //const days = calculateDaysOfStay(checkInDate, checkOutDate);
+      const days = calculateDaysOfStay(checkInDate, checkOutDate);
 
-      // setDaysOfStay(days);
+      setDaysOfStay(days);
 
       // check booking availability
       // checkBookingAvailability({
@@ -65,7 +65,7 @@ const BookingDatePicker = ({ room }: Props) => {
         status: "PAID",
       },
     };
-    //newBooking(bookingData);
+      newBooking(bookingData);
   };
 
   return (

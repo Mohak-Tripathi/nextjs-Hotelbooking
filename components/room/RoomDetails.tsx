@@ -71,7 +71,7 @@ const RoomDetails = ({ data }: Props) => {
         </div>
 
         <div className="col-12 col-md-6 col-lg-4">
-          {/* <BookingDatePicker room={room} /> */}
+          <BookingDatePicker room={room} />
           {/* // Room Map - TODO */}
           {room?.location && (
             <div className="my-5">
