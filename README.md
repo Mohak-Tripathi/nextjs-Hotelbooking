@@ -5,10 +5,10 @@ This project is built to get hands-on experience on NextJs technology which is g
 Note- This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Screenshots
-![Screenshot 1](./screenshot/Screenshot%20(94).png =300x)
-![Screenshot 2](./screenshot/Screenshot%20(95).png =200x)
-![Screenshot 3](./screenshot/Screenshot%20(96).png =100x)
-![Screenshot 4](./screenshot/Screenshot%20(97).png =500x)
+![Screenshot 1](./screenshot/Screenshot%20(94).png)
+![Screenshot 2](./screenshot/Screenshot%20(95).png)
+![Screenshot 3](./screenshot/Screenshot%20(96).png)
+![Screenshot 4](./screenshot/Screenshot%20(97).png)
 ![Screenshot 5](./screenshot/Screenshot%20(98).png)
 ![Screenshot 6](./screenshot/Screenshot%20(100).png)
 ![Screenshot 7](./screenshot/Screenshot%20(101).png)
@@ -17,9 +17,35 @@ Note- This is a [Next.js](https://nextjs.org/) project bootstrapped with [`creat
 ![Screenshot 10](./screenshot/Screenshot%20(104).png)
 
 
+## Project Overview
+
+Welcome to [Your Project Name], a full-stack Hotel Booking Application built with Next.js. This project showcases the power of Next.js by leveraging its key features:
+
+- **File-based routing**
+- **Server-Side Rendering**
+- **Full-stack application development**
+
+## Features
+
+- Custom error handling
+- Advanced filtering, searching, and pagination
+- Authentication using `next-auth`
+- Integration with Stripe Payment Gateway for secure transactions
+- Server-side state management using Redux
+- Room booking management
+- User reviews for rooms
+- Admin dashboard with multiple routes
+- Deployment on Vercel for production-ready applications
 
 
+## Technology Stack
 
+Next.js for the frontend framework
+next-auth for authentication
+Redux for state management
+Stripe for payment processing
+MongoDB for data storage
+Cloudinary for image hosting
 
 ## Getting Started
 
@@ -41,6 +67,22 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+
+## Contribution Guidelines
+If you'd like to contribute to the project, please follow these guidelines:
+
+## Fork the repository
+Create a new branch
+Make your changes
+Submit a pull request
+Support and Feedback
+If you encounter any issues or have suggestions for improvement, feel free to open an issue. I appreciate your feedback!
+
+## License
+
+Feel free to modify this template further based on your project's specific details and features.
+
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -50,8 +92,7 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
+
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The deployed application is here. 
