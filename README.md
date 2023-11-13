@@ -1,6 +1,6 @@
 # BOOKIT-HOTEL BOOKING Web Application
 
-This project is built to get hands-on experience on NextJs technology which is gaining pace. In this web application, I write to mimic all basic functionality which any web application needs. Please look into the features section for a detailed outline. The demo of project is available here.
+This project is built to get hands-on experience on NextJs technology which is gaining pace. In this web application, I write to mimic all basic functionality which any web application needs. Please look into the features section for a detailed outline. The demo of project is available here [bookit-hotelWebApp](http://)
 
 Note- This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -40,12 +40,12 @@ Welcome to [Your Project Name], a full-stack Hotel Booking Application built wit
 
 ## Technology Stack
 
-Next.js for the frontend framework
-next-auth for authentication
-Redux for state management
-Stripe for payment processing
-MongoDB for data storage
-Cloudinary for image hosting
+1. Next.js for the frontend framework
+2. next-auth for authentication
+3. Redux for state management
+4. Stripe for payment processing
+5. MongoDB for data storage
+6. Cloudinary for image hosting
 
 ## Getting Started
 
@@ -66,6 +66,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
 
 
 ## Contribution Guidelines
@@ -93,6 +94,7 @@ To learn more about Next.js, take a look at the following resources:
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 
+
 ## Deploy on Vercel
 
-The deployed application is here. 
+The deployed application is [here](http://). 
