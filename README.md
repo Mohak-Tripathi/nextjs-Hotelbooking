@@ -19,7 +19,7 @@ Note- This is a [Next.js](https://nextjs.org/) project bootstrapped with [`creat
 
 ## Project Overview
 
-Welcome to [Your Project Name], a full-stack Hotel Booking Application built with Next.js. This project showcases the power of Next.js by leveraging its key features:
+Welcome to bookit, a full-stack Hotel Booking Application built with Next.js. This project showcases the power of Next.js by leveraging its key features:
 
 - **File-based routing**
 - **Server-Side Rendering**
