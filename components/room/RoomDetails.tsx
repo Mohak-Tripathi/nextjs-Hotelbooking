@@ -39,7 +39,7 @@ const RoomDetails = ({ data }: Props) => {
       new mapboxgl.Marker().setLngLat(coordinates).addTo(map);
     };
 
-    setMap();
+    if(room?.location) setMap();
   }, []);
 
 
