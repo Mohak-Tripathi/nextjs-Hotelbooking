@@ -89,7 +89,7 @@ const BookingDetails = ({ data }: Props) => {
           <div className="cart-item my-1">
             <div className="row my-5">
               <div className="col-4 col-lg-2">
-                <Image
+                <img
                   src={booking?.room?.images[0]?.url}
                   alt={booking?.room?.name}
                   height="45"

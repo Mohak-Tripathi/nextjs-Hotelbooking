@@ -81,7 +81,7 @@ const UploadAvatar = () => {
             <div className="d-flex align-items-center">
               <div className="me-3">
                 <figure className="avatar item-rtl">
-                  <Image
+                  <img
                     src={avatarPreview}
                     className="rounded-circle"
                     alt="image"
