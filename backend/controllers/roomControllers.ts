@@ -60,7 +60,6 @@ export const newRoom  = catchAsyncErrors( async(req: NextRequest) =>{
   return NextResponse.json({
     success: true, 
     room
-
   })
 
 
@@ -68,7 +67,7 @@ export const newRoom  = catchAsyncErrors( async(req: NextRequest) =>{
 
 
 
-// Get room details  =>  /api/rooms/:id
+ // Get room details  =>  /api/rooms/:id
 export const getRoomDetails =  catchAsyncErrors( async (
   req: NextRequest,
   { params }: { params: { id: string } }
@@ -97,7 +96,7 @@ export const getRoomDetails =  catchAsyncErrors( async (
 
 
 
-// Update room details  =>  /api/admin/rooms/:id  - only admin can update
+ // Update room details  =>  /api/admin/rooms/:id  - only admin can update
 export const updateRoom = catchAsyncErrors( async (
   req: NextRequest,
   { params }: { params: { id: string } }

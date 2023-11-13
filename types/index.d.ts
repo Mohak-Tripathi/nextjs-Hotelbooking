@@ -5,3 +5,5 @@ declare module "nodemailer"
 declare module "mapbox-gl/dist/mapbox-gl.js";
 declare module "react-datepicker"
 declare module "moment-range"
+declare module "react-hot-toast"
+declare module "jspdf"

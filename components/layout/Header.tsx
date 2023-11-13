@@ -85,7 +85,7 @@ const Header = () => {
       dispatch(setUser(data?.user));
       dispatch(setIsAuthenticated(true));
     }
-  }, [data]);
+  }, [data, dispatch]);
 
 
 

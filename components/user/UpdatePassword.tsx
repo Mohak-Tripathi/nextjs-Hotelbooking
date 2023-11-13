@@ -23,7 +23,7 @@ const UpdatePassword = () => {
       toast.success("Password updated");
       router.refresh();
     }
-  }, [error, isSuccess]);
+  }, [error, isSuccess, router]);
 
   const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

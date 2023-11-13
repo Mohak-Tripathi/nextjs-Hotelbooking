@@ -33,7 +33,7 @@ const Register = () => {
       router.push("/login");
       toast.success("Account Registered. You can login now");
     }
-  }, [error, isSuccess]);
+  }, [error, isSuccess, router]);
 
   const submitHandler = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();

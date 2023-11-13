@@ -75,7 +75,7 @@ const BookingDatePicker = ({ room }: Props) => {
       //console.log(checkoutData, "mt")
       router.replace(checkoutData?.url);
     }
-  }, [error, checkoutData]);
+  }, [error, checkoutData, router]);
 
 
 

@@ -3,7 +3,7 @@ const nextConfig = {
   env: {
     API_URL: "http://localhost:3000",
     DB_LOCAL_URI: "mongodb://127.0.0.1:27017/bookit-v2",
-    DB_URI: "mongodb+srv://mohaktripathi029:Mohak@@1914@cluster0.iaw5q5n.mongodb.net/bookit?retryWrites=true&w=majority",
+    DB_URI: "mongodb+srv://mohaktripathi029:mohakbookit@cluster0.qtofas1.mongodb.net/bookitv2?retryWrites=true&w=majority",
 
     CLOUDINARY_CLOUD_NAME: "dtujqgpzg",
     CLOUDINARY_API_KEY: "128418387286747",
