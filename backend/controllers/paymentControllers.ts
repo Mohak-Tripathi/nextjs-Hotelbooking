@@ -51,50 +51,52 @@ export const stripeCheckoutSession = catchAsyncErrors(
   }
 );
 
-// // Create new booking after payment  =>  /api/payment/webhook
-// export const webhookCheckout = async (req: NextRequest) => {
-//   try {
-//     const rawBody = await req.text();
-//     const signature = headers().get("Stripe-Signature");
+ // Create new booking after payment  =>  /api/payment/webhook
+export const webhookCheckout = async (req: NextRequest) => {
+  try {
+    const rawBody = await req.text();
+    const signature = headers().get("Stripe-Signature");
 
-//     const event = stripe.webhooks.constructEvent(
-//       rawBody,
-//       signature,
-//       process.env.STRIPE_WEBHOOK_SECRET
-//     );
+    const event = stripe.webhooks.constructEvent(
+      rawBody,
+      signature,
+      process.env.STRIPE_WEBHOOK_SECRET
+    );
 
-//     if (event.type === "checkout.session.completed") {
-//       const session = event.data.object;
+    console.log("helloworldhookCheckout")
 
-//       const room = session.client_reference_id;
-//       const user = (await User.findOne({ email: session?.customer_email })).id;
+    if (event.type === "checkout.session.completed") {
+      const session = event.data.object;
 
-//       const amountPaid = session?.amount_total / 100;
+      const room = session.client_reference_id;
+      const user = (await User.findOne({ email: session?.customer_email })).id;
 
-//       const paymentInfo = {
-//         id: session.payment_intent,
-//         status: session.payment_status,
-//       };
+      const amountPaid = session?.amount_total / 100;
 
-//       const checkInDate = session.metadata.checkInDate;
-//       const checkOutDate = session.metadata.checkOutDate;
-//       const daysOfStay = session.metadata.daysOfStay;
+      const paymentInfo = {
+        id: session.payment_intent,
+        status: session.payment_status,
+      };
 
-//       await Booking.create({
-//         room,
-//         user,
-//         checkInDate,
-//         checkOutDate,
-//         daysOfStay,
-//         amountPaid,
-//         paymentInfo,
-//         paidAt: Date.now(),
-//       });
+      const checkInDate = session.metadata.checkInDate;
+      const checkOutDate = session.metadata.checkOutDate;
+      const daysOfStay = session.metadata.daysOfStay;
 
-//       return NextResponse.json({ success: true });
-//     }
-//   } catch (error: any) {
-//     console.log("Eror in stripe checkout webhook => ", error);
-//     return NextResponse.json({ errMessage: error?.message });
-//   }
-// };
+      await Booking.create({
+        room,
+        user,
+        checkInDate,
+        checkOutDate,
+        daysOfStay,
+        amountPaid,
+        paymentInfo,
+        paidAt: Date.now(),
+      });
+
+      return NextResponse.json({ success: true });
+    }
+  } catch (error: any) {
+    console.log("Eror in stripe checkout webhook => ", error);
+    return NextResponse.json({ errMessage: error?.message });
+  }
+};

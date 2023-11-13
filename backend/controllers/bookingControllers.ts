@@ -31,6 +31,8 @@ export const newBooking = catchAsyncErrors(async (req: NextRequest) => {
     paidAt: Date.now(),
   });
 
+  console.log(booking, "checkmt");
+
   return NextResponse.json({
     booking,
   });
