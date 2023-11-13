@@ -3,7 +3,12 @@
 This project is built to get hands-on experience on NextJs technology which is gaining pace. In this web application, I write to mimic all basic functionality which any web application needs. Please look into the features section for a detailed outline. The demo of project is available here.
 
 ## Screenshots
-![Screenshot 1](screenshot/Screenshot(94).png)
+![Screenshot 1](./screenshot/Screenshot%20(94).png)
+![Screenshot 1](./screenshot/Screenshot%20(95).png)
+![Screenshot 1](./screenshot/Screenshot%20(96).png)
+![Screenshot 1](./screenshot/Screenshot%20(97).png)
+![Screenshot 1](./screenshot/Screenshot%20(98).png)
+![Screenshot 1](./screenshot/Screenshot%20(99).png)
 
 
 
