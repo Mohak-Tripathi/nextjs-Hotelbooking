@@ -2,8 +2,10 @@
 
 This project is built to get hands-on experience on NextJs technology which is gaining pace. In this web application, I write to mimic all basic functionality which any web application needs. Please look into the features section for a detailed outline. The demo of project is available here.
 
+Note- This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 ## Screenshots
-![Screenshot 1](./screenshot/Screenshot%20(94).png)
+![Screenshot 1](./screenshot/Screenshot%20(94).png =400x)
 ![Screenshot 2](./screenshot/Screenshot%20(95).png)
 ![Screenshot 3](./screenshot/Screenshot%20(96).png)
 ![Screenshot 4](./screenshot/Screenshot%20(97).png)
@@ -17,7 +19,7 @@ This project is built to get hands-on experience on NextJs technology which is g
 
 
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 
 ## Getting Started
 
