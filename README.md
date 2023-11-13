@@ -4,11 +4,15 @@ This project is built to get hands-on experience on NextJs technology which is g
 
 ## Screenshots
 ![Screenshot 1](./screenshot/Screenshot%20(94).png)
-![Screenshot 1](./screenshot/Screenshot%20(95).png)
-![Screenshot 1](./screenshot/Screenshot%20(96).png)
-![Screenshot 1](./screenshot/Screenshot%20(97).png)
-![Screenshot 1](./screenshot/Screenshot%20(98).png)
-![Screenshot 1](./screenshot/Screenshot%20(99).png)
+![Screenshot 2](./screenshot/Screenshot%20(95).png)
+![Screenshot 3](./screenshot/Screenshot%20(96).png)
+![Screenshot 4](./screenshot/Screenshot%20(97).png)
+![Screenshot 5](./screenshot/Screenshot%20(98).png)
+![Screenshot 6](./screenshot/Screenshot%20(100).png)
+![Screenshot 7](./screenshot/Screenshot%20(101).png)
+![Screenshot 8](./screenshot/Screenshot%20(102).png)
+![Screenshot 9](./screenshot/Screenshot%20(103).png)
+![Screenshot 10](./screenshot/Screenshot%20(104).png)
 
 
 
