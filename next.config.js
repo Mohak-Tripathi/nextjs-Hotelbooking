@@ -3,15 +3,23 @@ const nextConfig = {
   env: {
     API_URL: "http://localhost:3000",
     DB_LOCAL_URI: "mongodb://127.0.0.1:27017/bookit-v2",
-    DB_URI: "",
+    DB_URI: "mongodb+srv://mohaktripathi029:Mohak@@1914@cluster0.iaw5q5n.mongodb.net/bookit?retryWrites=true&w=majority",
 
     CLOUDINARY_CLOUD_NAME: "dtujqgpzg",
     CLOUDINARY_API_KEY: "128418387286747",
     CLOUDINARY_API_SECRET: "ERr5b9VFBccaIJ0ZPLm79gIBtw4",
 
+    
+    
     STRIPE_WEBHOOK_SECRET: "whsec_714304af11005ab705a467ecd24ed06226c4b9e42530bec4a46255d5c5038ab8",
-    STRIPE_SECRET_KEY: "sk_test_51M3dmySAZ5uNounz1I2A7ovuVpQnuxn7MEY0VYy9yKhkCvbmykUgLChTSsbVgjTstB9EP9uymYQ8dEnr3AC8kfX200N3nHPxnV",
+    
+    // (local stripe webhook)
+    /**STRIPE_SECRET_KEY: "sk_test_51M3dmySAZ5uNounz1I2A7ovuVpQnuxn7MEY0VYy9yKhkCvbmykUgLChTSsbVgjTstB9EP9uymYQ8dEnr3AC8kfX200N3nHPxnV", */
 
+    // (for production stripe webhook)
+    STRIPE_SECRET_KEY: "whsec_7qSgq2ePw8qKpLolE42RQWhqBJBvMnFQ",
+    
+    
     NEXTAUTH_URL: "http://localhost:3000",
     NEXTAUTH_SECRET: "KSDFJKLSDJFLKSDFJSLDKF934KJLDJGDLKGFJDF",
 
